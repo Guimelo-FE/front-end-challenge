@@ -67,3 +67,4 @@ _form.scss - is where the width and height of the section is set. it contains th
 .form-text {} -> styles the top text ("h1" and "p" tags);
 .form-wraper {} -> sets the "display: flex" as a column to align vertically all of the inputs and labels.
 .form-radio-wraper {} -> organizes the 2 radio inputs as a block to be horizontally placed outside of the flex column from the ".form-wraper".
+
