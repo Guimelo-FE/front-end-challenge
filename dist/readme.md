@@ -7,7 +7,7 @@ Consists in a interactive landing page with paged API's generated products list.
 ----------------------
 
 
-This application components are:
+This application's HTML components are:
 
 
 
@@ -45,7 +45,7 @@ div/form-radio-wraper: wraps the radio inputs/labels for styling as a block.
 # Using Visual Studio Code's Live Sass Compiler
 - Don't edit the "main.css" file in the "css" directory inside "dist", for it will be updated as the scss directory's files are updated.
 - All of the crucial tags in the HTML marked in the topic above have their own "_'tag'.scss", imported in the
-"main.scss" file inside the "scss" directory with their aproprieted names.
+"main.scss" file inside the "scss" directory with their appropriated names.
 
 
 # SCSS Files:
