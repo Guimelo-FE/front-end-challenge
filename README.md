@@ -57,7 +57,7 @@ main.scss - is where to import all of the other non-compiling files (starting wi
 _config.scss - is where to put all of the functions, mixins and variables to be used inside the other "_'tag'.scss" files.
 
 
-_header.scss - is where the style of the header tag is located. inside you will find associated with the "header-wraper" class an "background: linear-gradient" style used to slanter the gray mix white background color. It is set like that to smooth the edge line instead of the common pixeled transition from one color to another.
+_header.scss - is where the style of the header tag is located. inside of it, you will find associated with the "header-wraper" class a "background: linear-gradient" style used to slanter the gray mix white background color. It is set like that to smooth the edge line instead of the common pixeled transition from one color to another.
 
 along-side, you'll find the classes "row-1" and "row-2", which have the purpose of aligning the div's Y axis using "display: flex" as a column to allow responsiveness after (still to be updated.).
 
@@ -68,5 +68,5 @@ _form.scss - is where the width and height of the section is set. it contains th
 
 .form-wraper {} -> sets the "display: flex" as a column to align vertically all of the inputs and labels;
 
-.form-radio-wraper {} -> organizes the 2 radio inputs as a block to be horizontally placed outside of the flex column from the ".form-wraper".
+.form-radio-wraper {} -> organizes the 2 radio inputs as a block to be horizontally placed outside the flex column from the ".form-wraper".
 
