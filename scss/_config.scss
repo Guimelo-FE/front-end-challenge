@@ -1,0 +1,22 @@
+$primaryColor : #707070;
+$secondaryColor: #ffffffd8;
+$textColor: #888888bb;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+@mixin media-mobile {
+    @media screen and (min-width: 420px) {
+        @content;
+    }    
+}
+
+@mixin media-desktop {
+    @media screen and (min-width: 1280px) {
+        @content;
+    }
+}
