@@ -65,6 +65,8 @@ along-side, you'll find the classes "row-1" and "row-2", which have the purpose 
 _form.scss - is where the width and height of the section is set. it contains the following styled classes:
 
 .form-text {} -> styles the top text ("h1" and "p" tags);
-.form-wraper {} -> sets the "display: flex" as a column to align vertically all of the inputs and labels.
+
+.form-wraper {} -> sets the "display: flex" as a column to align vertically all of the inputs and labels;
+
 .form-radio-wraper {} -> organizes the 2 radio inputs as a block to be horizontally placed outside of the flex column from the ".form-wraper".
 
