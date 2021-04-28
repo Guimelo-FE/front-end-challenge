@@ -9,7 +9,7 @@ Consists in a interactive landing page with paged API's generated products list.
 ----------------------
 
 
-This application components are:
+This application's HTML components are:
 
 
 
