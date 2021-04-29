@@ -1,21 +1,28 @@
 header {
     width: 100%;
-    height: 397.89px;
-    background: linear-gradient(196deg, $primaryColor, $primaryColor 75%, rgb(255, 255, 255) calc(75% + 1px), rgb(255, 255, 255) 100%);
-    // Linear-gradient built to smooth the transition line from one color to another
+    height: 500px;
+    background: $primaryColor;
+    transform: skew(0deg, 20deg) translateY(-172px);
     
+    //I'm using skew to shape the top angle, with a translateY for compensation on Y axis.
+    //Above, in .header-wraper, the transform is used to adjust the inside elements
 
     .header-wraper {
-        height: 82%;
+        position: relative;
+        top: 172px;
+        transform: skew(0deg, -20deg);
+        width: 100%;
+        height: 325px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
 
         .row-1 {
-            width: 358px;
+            width: 90%;
             height: 90px;
             color: $secondaryColor;
-            margin: 61px 0 8px 16px;
+            margin: 61px 32px 8px 16px;
 
             h1 {
                 font-size: 40px;
@@ -36,7 +43,6 @@ header {
             grid-template-columns: repeat(2, 160px);
             grid-template-rows: repeat(2, 40px);
             grid-gap: 20px;
-            margin-left: 38px;
             
             button {
                 width: 160px;
