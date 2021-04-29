@@ -1,6 +1,6 @@
 section {
     width: 100%;
-    height: 900px;
+    height: auto;
 
     .form-text {
         color: $textColor;
@@ -20,7 +20,7 @@ section {
         }
     }
 
-    form .form-wraper {
+    form .form-top-wraper, .form-bottom-wraper {
         display: flex;
         flex-direction: column;
         padding: 6px 18px 6px 17px;
@@ -54,7 +54,7 @@ section {
             }
         }
 
-        input[type=submit] {
+        .form-top-submit {
             width: 383px;
             height: 39px;
             color: $textColor;
@@ -64,5 +64,24 @@ section {
             border-radius: 4px;
             opacity: 1;
         }
+    }
+
+    .form-bottom-text {
+        width: 100%;
+        padding: 0 5%;
+        margin: 28px 0;
+        color: $textColor;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .form-bottom-submit {
+        width: 260px;
+        height: 39px;
+        color: $textColor;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid $primaryColor;
+        border-radius: 4px;
+        margin: 20px auto;
     }
 }
