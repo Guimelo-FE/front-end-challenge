@@ -10,12 +10,18 @@ $textColor: #888888db;
 }
 
 @mixin media-mobile {
-    @media screen and (min-width: 420px) {
+    @media screen and (min-width: 600px) {
         @content;
     }    
 }
 
-@mixin media-desktop {
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
     @media screen and (min-width: 1280px) {
         @content;
     }

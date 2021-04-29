@@ -1,24 +1,31 @@
-@import 'config', 'header', 'form', 'products', 'footer';
+@import 'config', 'header', 'form', 'products', 'footer', 'responsive';
 
 body {
+    position: relative;
     width: 100%;
     height: 100%;
     background: #ffffff;
+    overflow-x: hidden;
 }
 
+
+// TRANSITION-1 appears 2 times in the HTML, one top and one bottom.
+// I'm using the span tag to position the h3 tag mid border-bottom
+// to create horizontal lines.
+
 .transition-1 {
+    width: 100%;
     color: $textColor;
-    margin: 91px 0 30px 0;
+    margin: 41px 0 41px 0;
     font-size: 18px;
 
     h3 {
-        width: 100%;
-        max-width: 700px;
         text-align: center;
         border-bottom: 1px solid $primaryColor;
         line-height: 0.1;
 
         span {
+            max-width: 300px;
             background: #fff;
             padding: 0 16px 0 16px;
         }

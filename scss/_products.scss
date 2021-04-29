@@ -1,42 +1,48 @@
-main .products {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.products {
+    display: grid;
+    justify-items: center;
 
-    .products-item{
+
+    .products-wraper {
+        width: 100%;
         display: flex;
-        margin-bottom: 30px;
+        flex-direction: column;
+        align-items: center;
 
-        .products-item-img{
-            width: 169px;
-            height: 129px;
-            background-color: #fff;
-            border: 1.5px solid $primaryColor;
-            margin-right: 23px;
-        }
-
-        .products-item-info {
+        .products-item{
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            color: $textColor;
+            margin-bottom: 30px;
 
-            h4 {
-                font-weight: 400;
+            .products-item-img{
+                width: 169px;
+                height: 129px;
+                background-color: #fff;
+                border: 1.5px solid $primaryColor;
+                margin-right: 23px;
             }
 
-            p {
-                font-size: 12px;
-            }
-
-            button {
-                width: 200px;
-                height: 30px;
+            .products-item-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 color: $textColor;
-                background: #FFFFFF 0% 0% no-repeat padding-box;
-                border: 1px solid $primaryColor;
-                border-radius: 4px;
+
+                h4 {
+                    font-weight: 400;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+
+                button {
+                    width: 200px;
+                    height: 30px;
+                    color: $textColor;
+                    background: #FFFFFF 0% 0% no-repeat padding-box;
+                    border: 1px solid $primaryColor;
+                    border-radius: 4px;
+                }
             }
         }
     }
@@ -48,5 +54,11 @@ main .products {
         background: #FFFFFF 0% 0% no-repeat padding-box;
         border: 1px solid $primaryColor;
         border-radius: 4px;
+        margin: 23px 0 103px 0;
     }
+
+}
+
+#product-description {
+    display: none;
 }

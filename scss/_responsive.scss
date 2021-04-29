@@ -1,0 +1,168 @@
+@include media-mobile {
+    header {
+        width: 100%;
+        height: 500px;
+        background: $primaryColor;
+        transform: skew(0deg, 6deg) translateY(-172px);
+        
+        //I'm using skew to shape the top angle, with a translateY for compensation on Y axis.
+        //Above, in .header-wraper, the transform is used to adjust the inside elements
+
+        .header-wraper {
+            transform: skew(0deg, -6deg);
+            height: 300px;
+
+            .row-1 {
+                text-align: center;
+            }
+
+            .row-2 {
+                display: grid;
+                grid-template-columns: repeat(2, 160px);
+                grid-template-rows: repeat(2, 40px);
+                grid-gap: 20px;
+            }
+        }
+    }
+
+    .form-text {
+        max-width: 100%;
+        margin: 0;
+        padding: 0 4%;
+        text-align: center;
+    }
+}
+
+
+@include media-md {
+    .skew {
+        transform: skew(0deg, -3deg);
+    }
+
+}
+
+
+@include media-lg {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        .header-wraper {
+            justify-content: space-around;
+
+            .row-2 {
+                display: flex;
+            }
+        }
+    }
+
+    section {
+        width: 1024px;
+    
+
+    .section-top-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px 18px 6px 17px;
+
+        .form-text {
+            max-width: 600px;
+            text-align: left;
+            padding: 0 40px 0 0;
+            margin: 0 18px 0 0;
+        }
+
+        .form-top-wraper {
+            width: 340px;
+            padding: 0 0;
+
+            .input-text {
+                width: 340px;
+            }
+
+            .form-radio-wraper {
+                width: 340px;
+            }
+
+            .form-top-submit {
+                width: 340px;
+            }
+            
+        }
+    }
+}
+
+    main {
+        width: 1024px;
+    }
+
+    .products {
+
+        .products-wraper {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            align-items: center;
+
+            .products-item{
+                display: flex;
+                flex-direction: column;
+                justify-self: center;
+                
+                #product-description {
+                    width: 170px;
+                    display: block;
+                    margin: 0 0 10px 0;
+
+                    //Set to show the description product that was set as display:none on mobile
+                }
+
+                .products-item-img{
+                    width: 200px;
+                    margin-right: 0;
+                }
+
+                .products-item-info {
+                    h4 {
+                        margin: 14px 0 10px 0;
+                    }
+
+                    h3 {
+                        margin: 6px 0 7px 0;
+                    }
+
+                    button {
+                        width: 200px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .form-bottom {
+        display: grid;
+
+        .form-bottom-wraper {
+            flex-direction: row;
+            justify-content: center;
+
+            div {
+                margin: 0 20px 0 20px;
+            }
+        }
+    }
+
+
+    footer {
+
+        .footer-container {
+            height: 150px;
+        }
+    }
+}

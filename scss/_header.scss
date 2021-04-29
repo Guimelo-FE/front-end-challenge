@@ -4,8 +4,8 @@ header {
     background: $primaryColor;
     transform: skew(0deg, 20deg) translateY(-172px);
     
-    //I'm using skew to shape the top angle, with a translateY for compensation on Y axis.
-    //Above, in .header-wraper, the transform is used to adjust the inside elements
+    //I'm using skew to shape the top angle, with a translateY for compensation.
+    //Above, in .header-wraper,
 
     .header-wraper {
         position: relative;
@@ -17,12 +17,13 @@ header {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        padding-top: 20px;
 
         .row-1 {
             width: 90%;
             height: 90px;
             color: $secondaryColor;
-            margin: 61px 32px 8px 16px;
+            margin: 31px 32px 8px 16px;
 
             h1 {
                 font-size: 40px;
