@@ -3,7 +3,7 @@
 
 ---- LANDING PAGE ----
 
-Consists in a interactive landing page with paged API's generated products list.
+Consists in a interactive and responsive landing page with paged API's generated products list.
 
 
 ----------------------
@@ -106,4 +106,8 @@ _form.scss - is where both, top and bottom forms are styled. It contains the fol
 
 _products.scss - is where the products list is styled, along with its reactive button to show more products.
 
+<<<<<<< HEAD
 _footer.scss - is where the bottom text and angled element are styled, below the bottom form.
+=======
+_footer.scss - is where the bottom text and angled element are styled, below the bottom form.
+>>>>>>> 6b39fb64de6b1b4579cea1067a955af5046b7a5b
