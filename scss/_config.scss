@@ -21,6 +21,12 @@ $textColor: #888888db;
     }
 }
 
+@mixin media-md2 {
+    @media screen and (min-width: 900px) {
+        @content;
+    }
+}
+
 @mixin media-lg {
     @media screen and (min-width: 1280px) {
         @content;
