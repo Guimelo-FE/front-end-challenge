@@ -42,6 +42,19 @@
 }
 
 
+@include media-md2 {
+
+    .products {
+        .products-wraper {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+        }
+    }
+}
+
+
 @include media-lg {
     body {
         display: flex;
@@ -106,8 +119,7 @@
             display: grid;
             grid-gap: 10px;
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            align-items: center;
+            grid-template-rows: auto;
 
             .products-item{
                 display: flex;
