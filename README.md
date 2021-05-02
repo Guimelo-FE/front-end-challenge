@@ -8,13 +8,13 @@ Consists in a interactive and responsive landing page with paged API's generated
 
 ---
 
-What I *was*able to accomplish:
+What I *was* able to accomplish:
 
 1. Full styled and responsive landping page;
 
 2. Render the API's information onto the HTML and style it accordingly;
 
-3. Implementation of the landing page on Netfly.
+3. Implementation of the landing page on Netlify.
 
 
 
@@ -88,7 +88,7 @@ This changes the product list from 1 originally column in the mobile resolution 
 ## HTML components:
 
 
-1. Header Tag - from lines 12 to 27
+### 1. Header Tag - from lines 12 to 27
 
 Purpose:
 
@@ -101,7 +101,7 @@ Also, the *header* tag itself is used to create the slant grey effect with *tran
 
 
 
-2. Section Tag (top one) - from lines 29 to 61
+### 2. Section Tag (top one) - from lines 29 to 61
 
 Purpose:
 
@@ -109,7 +109,7 @@ Wraps text and top position form elements, using *flex* to align them. The displ
 
 
 
-3. Main Tag - from lines 63 to 74
+### 3. Main Tag - from lines 63 to 74
 
 Purpose: 
 
@@ -119,7 +119,7 @@ The *class* is used to wrap and style the elements. The *id* is referred inside 
 
 
 
-4. Section Tag (bottom one) - from lines 76 to 97
+### 4. Section Tag (bottom one) - from lines 76 to 97
 
 Purpose:
 
@@ -127,7 +127,7 @@ Wraps text and bottom position form elements, using *grid* to align them. The *f
 
 
 
-5. Footer Tag - from lines 99 to 108
+### 5. Footer Tag - from lines 99 to 108
 
 Purpose:
 
@@ -135,7 +135,7 @@ Wraps the text elements and creates the slant style using *clip-path* since it d
 
 
 
-5. Script Tag at the body's end.
+### 6. Script Tag at the body's end.
 
 ---
 
