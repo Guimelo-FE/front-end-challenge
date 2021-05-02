@@ -45,8 +45,6 @@ fetchData()
 
 // End of the Function to consume the API and render it into the HTML.
 
-/*
-const btnPage = document.querySelector('#nextPage')
 
 function nextPage() {
     btnPage.addEventListener('click', () => {
@@ -56,7 +54,6 @@ function nextPage() {
     })
 }
 
-nextPage()
 
 
 # Trying to make the button to change the page number
