@@ -1,6 +1,11 @@
+// Start of the Function to consume the API and render it into the HTML.
+
+let page = 1
+
 function fetchData() {
-    fetch('https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1')
+    fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`)
         .then(response => {
+            console.log(response)
             if(!response.ok) {
                 throw Error('ERROR');
             }
@@ -15,6 +20,7 @@ function fetchData() {
                         <img src="https:${product.image}" alt="Imagem" class="products-item-img"/>
                         <div class="products-item--info">    
                             <h4>${product.name}</h4>
+                            <p id="product-description">${product.description}</p>
                             <p>De: R$${product.oldPrice}</p>
                             <h3>Por: R$${product.price}</h3>
                             <p>ou 2x de R$${parseFloat((product.price) / 2)}</p>
@@ -27,12 +33,33 @@ function fetchData() {
                 })
                 .join("");
 
-            document.querySelector('#products').insertAdjacentHTML('afterbegin', html);
+            document.getElementById('products').insertAdjacentHTML('afterbegin', html);
             //.insertAdjacentHTML ratter than .innerHTML to avoid corrupting references
         }).catch(error => {
             console.log(error);
         });
-
 }
 
 fetchData()
+
+
+// End of the Function to consume the API and render it into the HTML.
+
+/*
+const btnPage = document.querySelector('#nextPage')
+
+function nextPage() {
+    btnPage.addEventListener('click', () => {
+    page++
+    console.log(page)
+    fetchData()
+    })
+}
+
+nextPage()
+
+
+# Trying to make the button to change the page number
+
+ */ 
+
