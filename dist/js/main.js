@@ -1,6 +1,7 @@
 // Start of the Function to consume the API and render it into the HTML.
 
 let page = 1
+// Variable to set the page number of the API's endpoint.
 
 function fetchData() {
     fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`)
@@ -44,19 +45,3 @@ fetchData()
 
 
 // End of the Function to consume the API and render it into the HTML.
-
-
-function nextPage() {
-    btnPage.addEventListener('click', () => {
-    page++
-    console.log(page)
-    fetchData()
-    })
-}
-
-
-
-# Trying to make the button to change the page number
-
- */ 
-
