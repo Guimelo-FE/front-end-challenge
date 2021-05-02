@@ -37,11 +37,13 @@ section {
         .input-text {
             width: 385px;
             height: 30px;
-            background: #FFFFFF 0% 0% no-repeat padding-box;
+            background: transparent;
             border: 1px solid #707070b2;
             border-radius: 1px;
             opacity: 1;
             margin-bottom: 20px;
+            padding: 0 2%;
+            outline: transparent;
         }
 
         .form-radio-wraper{
